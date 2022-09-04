@@ -1,0 +1,62 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "result": {
+    "totalCount": 10,
+    "pagesCount": 1,
+    "data": [
+      {
+        "id": "f0001f01-bfa3-45d5-9c18-affc619da703",
+        "next": "00000000-0000-0000-0000-000000000000",
+        "previous": "00000000-0000-0000-0000-000000000000",
+        "thumbnail": {
+          "url": "http://40.114.214.132:81/api/FileManger/Download/008c7742-804c-4b8f-a635-7b57f092731a?Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDQzNDU4NDQsImlzcyI6IjAwOGM3NzQyLTgwNGMtNGI4Zi1hNjM1LTdiNTdmMDkyNzMxYSJ9.wD1a1VsVmdZqBQ55QiLEOvIxYPSy1q1ZXXgxvApFx7Y",
+          "type": "jpg"
+        },
+        "title": "TEst API",
+        "description": "Test description api",
+        "status": true,
+        "shareUrl": "http://40.114.214.132:82/api/News/f0001f01-bfa3-45d5-9c18-affc619da703",
+        "dateCreated": "2020-11-02T09:59:11.407",
+        "dateModified": "2020-11-02T09:59:11.407",
+        "isBookmarked": true,
+        "countOfview": 0,
+        "tags": [
+          {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "tagName": "Urgent",
+            "tagColor": "#d09d42",
+            "tagBackgroundColor": "#000000"
+          }
+        ]
+      },
+      {
+        "id": "6688f1a3-daa3-4540-af41-41733a132dd0",
+        "next": "00000000-0000-0000-0000-000000000000",
+        "previous": "00000000-0000-0000-0000-000000000000",
+        "thumbnail": {
+          "url": "http://40.114.214.132:81/api/FileManger/Download/e86adab8-def5-4069-a242-2cc2249fe16f?Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDQzNDU4NDQsImlzcyI6ImU4NmFkYWI4LWRlZjUtNDA2OS1hMjQyLTJjYzIyNDlmZTE2ZiJ9.c1iFhBnSARnV-ixyQ4eaRI5MdMCKEkBMq7UZN0j_jm4",
+          "type": "string"
+        },
+        "title": "stringstringstringstringstringstringstring",
+        "description": "stringstringstringstringstringstringstring",
+        "status": true,
+        "shareUrl": "http://40.114.214.132:82/api/News/6688f1a3-daa3-4540-af41-41733a132dd0",
+        "dateCreated": "2020-11-01T18:30:10.29",
+        "dateModified": "2020-11-01T18:30:10.29",
+        "isBookmarked": false,
+        "countOfview": 0,
+        "tags": [
+          {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "tagName": "Urgent",
+            "tagColor": "#d09d42",
+            "tagBackgroundColor": "#000000"
+          }
+        ]
+      }
+    ]
+  },
+  "isActive": true
+}

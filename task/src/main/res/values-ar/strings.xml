@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_back">"مرحبا بعودتك  ! "</string>
+    <string name="login_to_your_account">تسجيل الدخول إلى حسابك</string>
+    <string name="password">كلمه المرور</string>
+    <string name="password_empty_error">ادخل كلمة المرور</string>
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="we_are_here_to_help">بإمكاننا مساعدتك هنا</string>
+    <string name="please_provide_your_mobile_number_to_send_you_an_otp_to_reset_your_password">يرجى تقديم رقم هاتفك المحمول لإرسال كلمة المرور لمرة واحدة لإعادة تعيين كلمة المرور الخاصة بك.</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="cancel">إلغاء</string>
+    <string name="reset_your_password">إعادة إرسال كلمة السر !</string>
+    <string name="enter_your_new_password_and_confirm_it">أدخل كلمة المرور الجديدة الخاصة بك وقم بتأكيدها</string>
+    <string name="re_enter_password">أعد إدخال كلمة المرور</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="enter_otp">"أدخل الرقم "</string>
+    <string name="otp_code_has_been_sent_to_you_via_sms_for_the_mobile_number_that_ends_with">تم إرسال رمز OTP إليك عبر رسالة نصية قصيرة لرقم الجوال الذي ينتهي بـ %s</string>
+    <string name="didn_t_recieve_the_code">لم يصلك الرمز؟</string>
+    <string name="verify">تحقق</string>
+    <string name="resend_code">أعد إرسال الرمز</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="email_empty_error"> ادخل اسم المستخدم الخاص بك</string>
+    <string name="user_name">اسم المستخدم</string>
+
+    <string name="forgot_password">نسيت كلمة السر ؟</string>
+    <string name="login_error">خطأ في اسم المستخدم أو كلمة المرور ، اذا كنت تواجه مشكلة يمكنك التواصل مع الادارة</string>
+    <string name="otp_error">الرجاء التأكد من صحة رمز التحقق المدخل</string>
+    <string name="search">search</string>
+</resources>

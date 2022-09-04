@@ -1,0 +1,6 @@
+include ':entities'
+include ':data'
+include ':core'
+include ':domain'
+include ':app'
+include ':task'

@@ -1,0 +1,48 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "result": {
+    "totalCount": 3,
+    "pagesCount": 1,
+    "data": [
+      {
+        "id": "ae9077a7-f9b6-4e4f-8f57-2f848979d3bd",
+        "message": "string123",
+        "createdByImage": "https://ijusoorusermgmtsit.channels.com.sa/api/UserInfo/GetUserImageByUserId?email=xXHDWVOvbpY3NROUlWbDVkMWFXcDFjMjl2Y21SbGJXOWhRR05vWVc1dVpXeHpMbU52YlM1ellRPT1mcTBCMQ==5n2ps",
+        "importance": "h",
+        "importanceLevel": "3",
+        "dateCreated": "2020-11-05T11:11:21.937",
+        "isBookMarked": false,
+        "shareUrl": "http://40.114.214.132:82/api/Announcement/ae9077a7-f9b6-4e4f-8f57-2f848979d3bd",
+        "attachments": [
+        ]
+      },
+      {
+        "id": "beb0ba9c-01aa-4e87-8e42-e88e2d84c42c",
+        "message": "stringeeee",
+        "createdByImage": "https://ijusoorusermgmtsit.channels.com.sa/api/UserInfo/GetUserImageByUserId?email=shhrXMSgYnVHFNUUJHeUk5RGFXcDFjMjl2Y21SbGJXOWhRR05vWVc1dVpXeHpMbU52YlM1ellRPT1kVkJmMg==NIgp9",
+        "importance": "h",
+        "importanceLevel": "3",
+        "dateCreated": "2020-11-05T10:33:01.113",
+        "isBookMarked": false,
+        "shareUrl": "http://40.114.214.132:82/api/Announcement/beb0ba9c-01aa-4e87-8e42-e88e2d84c42c",
+        "attachments": [
+        ]
+      },
+      {
+        "id": "c37af767-e087-4970-a519-a5684f464bbc",
+        "message": "adding new ",
+        "createdByImage": "https://ijusoorusermgmtsit.channels.com.sa/api/UserInfo/GetUserImageByUserId?email=oZWBQ32t7HNmFJS3drdnFHWk5JM2tRHM1O5",
+        "importance": "l",
+        "importanceLevel": "3",
+        "dateCreated": "2020-11-03T14:35:13.407",
+        "isBookMarked": false,
+        "shareUrl": "http://40.114.214.132:82/api/Announcement/c37af767-e087-4970-a519-a5684f464bbc",
+        "attachments": [
+        ]
+      }
+    ]
+  },
+  "isActive": true
+}

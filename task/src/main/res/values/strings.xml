@@ -1,0 +1,23 @@
+<resources>
+    <string name="search" translatable="false">search</string>
+    <string name="f" translatable="false">°F</string>
+    <string name="c" translatable="false">°C</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="today" translatable="false">Today</string>
+    <string name="tomorrow" translatable="false">Tomorrow</string>
+    <string name="split" translatable="false">/</string>
+    <string name="search_city" translatable="false">Search City</string>
+    <string name="mph" translatable="false">mph</string>
+    <string name="fahrenheit" translatable="false">Fahrenheit</string>
+    <string name="celsius" translatable="false">Celsius</string>
+    <string name="show_faviroute_cities" translatable="false">Show Faviroute Cities</string>
+    <string name="add_to_faviroute" translatable="false">Add To Faviroute</string>
+    <string name="added" translatable="false">Added</string>
+    <string name="channel_name" translatable="false">Weather</string>
+    <string name="channel_description" translatable="false">Weather Info</string>
+    <string name="weather_info" translatable="false">Weather Info</string>
+    <string name="weather_details" translatable="false">Weather Details</string>
+    <string name="data_base_name" translatable="false">WeatherRoomDB.csv</string>
+    <string name="file_generated" translatable="false">File Generated</string>
+    <string name="file_not_generated" translatable="false">File Not Generated</string>
+</resources>

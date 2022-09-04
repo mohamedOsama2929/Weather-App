@@ -1,0 +1,117 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+
+android {
+    compileSdkVersion (Android.compileSdkVersion)
+
+    defaultConfig {
+        minSdkVersion (Android.minSdkVersion)
+        targetSdkVersion (Android.targetSdkVersion)
+        versionCode = Android.versionCode
+        versionName = Android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        WetherTST {
+            initWith debug
+        }
+
+        WetherSTG {
+            initWith debug
+        }
+
+        WetherProd {
+            initWith release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            initWith debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        test.resources.srcDirs += 'src/unitTests/resources'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(":data")
+
+    //kotlin
+    implementation(Kotlin.kotlin_stdlib_jdk)
+    implementation(Kotlin.kotlin_stdlib)
+    implementation(Kotlin.kotlin_reflect)
+
+    //Coroutines
+    implementation(Coroutines.core)
+    implementation(Coroutines.android)
+
+    //Hilt
+    implementation(Hilt.hilt_android)
+    implementation(Hilt.viewmodel)
+    kapt(Hilt.kapt_hilt_android)
+    kapt(Hilt.kapt_hilt_compiler)
+
+    //Gson
+    implementation(Gson.gson)
+
+
+    //test
+    testImplementation (TestLib.junit)
+    androidTestImplementation(TestLib.junit)
+    androidTestImplementation(TestLib.androidxTestCore)
+    androidTestImplementation(TestLib.androidxTestCoreKtx)
+    androidTestImplementation(TestLib.core_testing)
+
+    testImplementation(TestLib.junit_jupiter_api)
+    testImplementation(TestLib.junit_jupiter_params)
+    testRuntimeOnly(TestLib.junit_jupiter_engine)
+
+    testImplementation(TestLib.mockito_core)
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+
+    androidTestImplementation(TestLib.kotlinTest)
+    androidTestImplementation(TestLib.espresso_core)
+    androidTestImplementation(TestLib.espresso_contrib)
+    androidTestImplementation(TestLib.androidx_espresso_idling_resource)
+    implementation(TestLib.androidx_espresso_idling_resource)
+
+    androidTestImplementation(TestLib.mockk)
+    androidTestImplementation(TestLib.runner)
+    androidTestImplementation(TestLib.testRules)
+    androidTestImplementation(TestLib.testExt)
+
+    debugImplementation(TestLib.fragmentTesting)
+    androidTestImplementation(TestLib.navigationTesting)
+    testImplementation (TestLib.coroutinesTest)
+    androidTestImplementation(TestLib.coroutinesTest)
+}

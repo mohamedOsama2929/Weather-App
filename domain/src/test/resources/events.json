@@ -1,0 +1,31 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "isActive": true,
+  "result": {
+    "totalCount": 5,
+    "pagesCount": 1,
+    "data": [
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "title": "title1",
+        "startTime": "2020-11-22T14:52:33.271Z",
+        "endTime": "2020-11-25T15:05:25.271Z",
+        "dateCreated": "2020-11-22T09:14:52.271Z",
+        "location": "location1",
+        "photo": "photo1"
+      },
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c123645afa6",
+        "title": "title2",
+        "startTime": "2020-09-23T09:10:52.271Z",
+        "endTime": "2020-10-02T09:11:52.271Z",
+        "dateCreated": "2020-11-22T09:14:52.271Z",
+        "location": "location2",
+        "photo": "photo2"
+      }
+    ],
+    "listCount": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "result": {
+    "data": {
+      "id": "c5d9b40a-86a2-4382-be38-cd093cadf0e0",
+      "next": "d4152e1d-298d-470e-9d84-59be37e50baf",
+      "previous": "e0b5612b-feec-4d6d-864d-24ecc3b7816d",
+      "thumbnail": {
+        "url": "http://40.114.214.132:81/api/FileManger/Download/4d14ba22-010c-4b5b-a900-1f6f8a44f82b?Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDQzNDYyNTAsImlzcyI6IjRkMTRiYTIyLTAxMGMtNGI1Yi1hOTAwLTFmNmY4YTQ0ZjgyYiJ9.IcawbYGnhZMIRMv6Zy0pVgBqQnRSErqyP_GlziOypjo",
+        "type": "jpg"
+      },
+      "title": "TEst API",
+      "description": "Test description api",
+      "status": true,
+      "shareUrl": "http://40.114.214.132:82/api/News/c5d9b40a-86a2-4382-be38-cd093cadf0e0",
+      "dateCreated": "2020-11-02T08:44:53.61",
+      "dateModified": "2020-11-02T08:44:53.61",
+      "isBookmarked": false,
+      "countOfview": 2
+    }
+  },
+  "isActive": true
+}

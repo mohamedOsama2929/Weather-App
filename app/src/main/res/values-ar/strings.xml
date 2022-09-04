@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="appcenter_distribute_update_dialog_title" tools:ignore="ExtraTranslation">تحديث التطبيق متاح</string>
+    <string name="appcenter_distribute_update_dialog_message_optional" tools:ignore="ExtraTranslation">%1$s %2$s (%3$d) متاح للتنزيل والتثبيت</string>
+    <string name="appcenter_distribute_update_dialog_message_mandatory" tools:ignore="ExtraTranslation">يطلب منك مطورو هذا التطبيق التحديث إلى %1$s %2$s (%3$d).</string>
+    <string name="appcenter_distribute_update_dialog_download" tools:ignore="ExtraTranslation">تحديث الآن</string>
+    <string name="appcenter_distribute_update_dialog_postpone" tools:ignore="ExtraTranslation">اسألني في يوم واحد</string>
+    <string name="appcenter_distribute_update_dialog_view_release_notes" tools:ignore="ExtraTranslation">عرض ملاحظات الإصدار</string>
+    <string name="appcenter_distribute_dialog_actioned_on_disabled_toast" tools:ignore="ExtraTranslation">تم تعطيل التوزيع</string>
+    <string name="appcenter_distribute_unknown_sources_dialog_message" tools:ignore="ExtraTranslation">لدواعي الأمان، قام جهازك بحظر تثبيت التطبيقات التي تم الحصول عليها من مصادر غير معروفة.</string>
+    <string name="appcenter_distribute_unknown_sources_dialog_settings" tools:ignore="ExtraTranslation">الاعدادت</string>
+    <!-- TODO: Deprecated. Remove this key and move the translated strings to appcenter_distribute_downloading_update. -->
+    <string name="appcenter_distribute_downloading_mandatory_update" tools:ignore="ExtraTranslation">جاري تحميل التحديث</string>
+    <!-- TODO: Add translations. -->
+    <string name="appcenter_distribute_downloading_version" tools:ignore="ExtraTranslation,MissingTranslation">تحميل الإصدار %1$s (%2$d)</string>
+    <string name="appcenter_distribute_downloading_error" tools:ignore="ExtraTranslation,MissingTranslation"> فشل تنزيل تحديث التطبيق</string>
+    <string name="appcenter_distribute_download_progress_number_format" tools:ignore="ExtraTranslation">%2$d ميجابايت من %1$d ميجابايت</string>
+    <string name="appcenter_distribute_install_ready_title" tools:ignore="ExtraTranslation">تم تنزيل تحديث التطبيق</string>
+    <string name="appcenter_distribute_install_ready_message" tools:ignore="ExtraTranslation">%1$s %2$s (%3$d) تم تنزيله وهو جاهز للتثبيت.</string>
+    <string name="appcenter_distribute_install" tools:ignore="ExtraTranslation">تثبيت</string>
+    <string name="appcenter_distribute_notification_category" tools:ignore="ExtraTranslation">تحديثات التطبيق</string>
+    <string name="appcenter_distribute_update_failed_dialog_title" tools:ignore="ExtraTranslation">تم تعطيل التحديثات داخل التطبيق</string>
+    <string name="appcenter_distribute_update_failed_dialog_ignore" tools:ignore="ExtraTranslation">تجاهل</string>
+    <string name="appcenter_distribute_update_failed_dialog_reinstall" tools:ignore="ExtraTranslation">أعد تثبيت التطبيق</string>
+    <string name="appcenter_distribute_update_failed_dialog_message" tools:ignore="ExtraTranslation">تم تحميل هذا الإصدار من الجانب أو تنزيله باستخدام متصفح في الوضع الخاص.</string>
+</resources>

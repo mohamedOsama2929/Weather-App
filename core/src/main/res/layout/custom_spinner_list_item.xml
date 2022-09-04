@@ -1,0 +1,11 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/sst_arabic_roman"
+    android:gravity="center_vertical"
+    android:minWidth="@dimen/x120dp"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAlignment="inherit"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall" />

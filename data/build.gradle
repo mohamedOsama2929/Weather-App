@@ -1,0 +1,151 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+
+android {
+    compileSdkVersion(Android.compileSdkVersion)
+
+    defaultConfig {
+        minSdkVersion(Android.minSdkVersion)
+        targetSdkVersion(Android.targetSdkVersion)
+        versionCode = Android.versionCode
+        versionName = Android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+
+    buildTypes {
+
+
+
+        WetherTST {
+            initWith debug
+            buildConfigField "String", "weatherKey", '\"' + "17e73fa7c8544a1db3a120712220309" + '\"'
+
+        }
+
+        WetherSTG {
+            initWith debug
+            buildConfigField "String", "weatherKey", '\"' + "17e73fa7c8544a1db3a120712220309" + '\"'
+
+        }
+
+        WetherProd {
+            initWith release
+            //release API Key
+            buildConfigField "String", "weatherKey", '\"' + "17e73fa7c8544a1db3a120712220309" + '\"'
+
+        }
+
+        release {
+            buildConfigField "String", "weatherKey", '\"' + "17e73fa7c8544a1db3a120712220309" + '\"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            initWith debug
+            buildConfigField "String", "weatherKey", '\"' + "17e73fa7c8544a1db3a120712220309" + '\"'
+
+        }
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+    }
+
+    sourceSets {
+        test {
+            resources.srcDirs += 'src/unitTests/resources'
+            java.srcDirs += "src/test-common/java"
+        }
+        androidTest {
+            java.srcDirs += "src/test-common/java"
+        }
+    }
+
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(":entities")
+    //kotlin
+    implementation(Kotlin.kotlin_stdlib_jdk)
+    implementation(Kotlin.kotlin_stdlib)
+    implementation(Kotlin.kotlin_reflect)
+
+    //Retrofit
+    implementation(Retrofit.retrofit2)
+    implementation(Retrofit.okhttp3)
+    implementation(Retrofit.converter_gson)
+    implementation(Retrofit.logging_interceptor)
+
+    //Gson
+    implementation(Gson.gson)
+
+    //Room
+    implementation(Androidx.room_runtime)
+    implementation(Androidx.room_ktx)
+    kapt(Androidx.room_compiler_kapt)
+
+    //Coroutines
+    implementation(Coroutines.core)
+    implementation(Coroutines.android)
+
+    //Hilt
+    implementation(Hilt.hilt_android)
+    implementation(Hilt.viewmodel)
+    kapt(Hilt.kapt_hilt_android)
+    kapt(Hilt.kapt_hilt_compiler)
+
+    //test
+    //test
+    testImplementation(TestLib.junit)
+    androidTestImplementation(TestLib.junit)
+    androidTestImplementation(TestLib.androidxTestCore)
+    androidTestImplementation(TestLib.androidxTestCoreKtx)
+    androidTestImplementation(TestLib.core_testing)
+
+    testImplementation(TestLib.junit_jupiter_api)
+    testImplementation(TestLib.junit_jupiter_params)
+    testRuntimeOnly(TestLib.junit_jupiter_engine)
+
+    testImplementation(TestLib.mockito_core)
+
+    androidTestImplementation(TestLib.kotlinTest)
+    androidTestImplementation(TestLib.espresso_core)
+    androidTestImplementation(TestLib.espresso_contrib)
+    androidTestImplementation(TestLib.androidx_espresso_idling_resource)
+    implementation(TestLib.androidx_espresso_idling_resource)
+
+    androidTestImplementation(TestLib.mockk)
+    androidTestImplementation(TestLib.runner)
+    androidTestImplementation(TestLib.testRules)
+    androidTestImplementation(TestLib.testExt)
+
+    debugImplementation(TestLib.fragmentTesting)
+    androidTestImplementation(TestLib.navigationTesting)
+
+    testImplementation(TestLib.coroutinesTest)
+    androidTestImplementation(TestLib.coroutinesTest)
+
+
+}

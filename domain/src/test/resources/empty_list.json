@@ -1,0 +1,11 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "result": {
+    "totalCount": 10,
+    "pagesCount": 1,
+    "data": []
+  },
+  "isActive": true
+}

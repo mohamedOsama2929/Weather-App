@@ -1,0 +1,33 @@
+{
+  "message": null,
+  "success": true,
+  "result": {
+    "data": {
+      "id": "706f993c-609e-46f0-9e11-237445c65a57",
+      "imageUrl": "http://40.114.214.132:81/api/FileManger/Download/d111ad30-bde1-4d4e-a81d-8eddcaccb13f?Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDY2MDA2NzUsImlzcyI6ImQxMTFhZDMwLWJkZTEtNGQ0ZS1hODFkLThlZGRjYWNjYjEzZiJ9.FTwj3vXsnFPGxenJCDNWebOEZtMDapMyKxes3poejKM",
+      "title": "What is Lorem",
+      "discountAmount": 10,
+      "category": "Category 1",
+      "categoryId": "5b66b79c-7aa1-4df4-a119-f4bc8a0e14ce",
+      "attachments": [
+        {
+          "attachmentID": "7acf333c-9595-424b-85c6-66c4f00be96b",
+          "attachmentType": "Offer Test2",
+          "attachmentURL": "http://40.114.214.132:81/api/FileManger/Download/255aa259-d565-4568-94bd-d6f84c077099?Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDY2MDA2NzUsImlzcyI6IjI1NWFhMjU5LWQ1NjUtNDU2OC05NGJkLWQ2Zjg0YzA3NzA5OSJ9.gi8KUUI2I0kST1zENlAr7Vo15ixcCzfjedxsm3MIqB8",
+          "attachmentName": "Offer Test2",
+          "attachmentExtension": "Offer Test2",
+          "attachmentSize": 0,
+          "attachmentDisplaySize": "0KB"
+        }
+      ],
+      "discountType": true,
+      "promotionCode": "DFC",
+      "expirationDate": "2020-11-22T11:30:42.221",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "terms": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "isExpired": true,
+      "createdDate": "2020-11-22T12:13:59.0089246",
+      "countOfview": 20
+    }
+  }
+}

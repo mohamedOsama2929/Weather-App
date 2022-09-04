@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#142544</color>
+    <color name="colorPrimaryDark">#142544</color>
+    <color name="colorAccent">#4399d8</color>
+    <color name="white">#fff</color>
+    <color name="white_60_opacity">#99ffffff</color>
+    <color name="bg">#FAF8F8</color>
+    <color name="dark_black">#23292f</color>
+    <color name="warm_purple">#712c81</color>
+    <color name="deep_lavender">#995db0</color>
+    <color name="dull_orange">#d09d42</color>
+    <color name="dull_orange_2">#e3743a</color>
+    <color name="yellow">#d5931c</color>
+    <color name="seafoam_blue">#66c0cb</color>
+    <color name="sky_blue">#789cff</color>
+    <color name="slate_grey">#55565e</color>
+    <color name="grey">#979797</color>
+    <color name="light_green_2">#FFD9E9BF</color>
+    <color name="dark_grey">#23292f</color>
+    <color name="light_grey">#f7f9fd</color>
+    <color name="black">#000</color>
+    <color name="dark">#FF23292F</color>
+    <color name="grey_4">#FF979797</color>
+    <color name="beige_3">#999999</color>
+    <color name="weekend_color">#dcdde5</color>
+    <color name="light_gray_2">#c1c1c1</color>
+    <color name="textColor">#23292f</color>
+    <color name="dark_blue_green">#142544</color>
+    <color name="close_pink">#f16b6b</color>
+    <color name="light_blue_green">#4399d8</color>
+    <color name="light_periwinkle">#dcdde5</color>
+    <color name="blue_grey">#868894</color>
+    <color name="blue_grey_1">#55565e</color>
+    <color name="ocean_green">#4399d8</color>
+    <color name="ocean_green_semi_trans">#334399d8</color>
+    <color name="light_gray">#9AD8D8D8</color>
+    <color name="disabled_brown">#DAA06D</color>
+    <color name="current_day_brown">#8c532d</color>
+    <color name="time_off_pending">#d5931c</color>
+    <color name="dark_pink">#ed5454</color>
+    <color name="pending_cancellation_dark_pink">#ee3030</color>
+    <color name="approved">#229a7d</color>
+    <color name="dark_white">#4ae5e5e5</color>
+    <color name="dark_white_2">#e5e5e5</color>
+    <color name="light_green">#e1f0ea</color>
+    <color name="beige">#f5f5f5</color>
+    <color name="grey_2">#828282</color>
+    <color name="grey_3">#19729fc5</color>
+
+    <color name="beige_2">#f5f5f5</color>
+    <color name="beige_2_trans">#CCF5F5F5</color>
+    <color name="squash">#4399d8</color>
+    <color name="squash_2">#d99a28</color>
+    <!--    <color name="squash">#d99a28</color>-->
+    <color name="secondary_orange">#e3743a</color>
+    <color name="squash_light">#fcf5e5</color>
+    <color name="tint_light_gray">#9AF6F6F6</color>
+
+    <color name="unread_item">#e4edf3</color>
+
+    <color name="rejected_notification">#fef0f0</color>
+    <color name="rejected_notification_dark">#1AF16B6B</color>
+
+    <color name="approved_notification">#f2f9f6</color>
+    <color name="approved_notification_dark">#e1f1eb</color>
+
+    <color name="default_notification">#FFF</color>
+    <color name="default_notification_dark">#f7f9fd</color>
+    <color name="span_text_color">#118971</color>
+    <color name="request_situation_color">#edf6f3</color>
+    <color name="job_requirement_color">#fdfaf2</color>
+
+    <color name="toogel_on">#142544</color>
+    <color name="text_tooltip">#55565e</color>
+
+    <color name="newColorPrimary">#142544</color>
+    <color name="newColorPrimaryDark">#142544</color>
+    <color name="normalColor">#789cff</color>
+
+    <color name="buttonColor_1">#3aacc6</color>
+    <color name="buttonColor_2">#60bb96</color>
+
+    <color name="boxGradientColor_1">#19579d</color>
+    <color name="boxGradientColor_2">#1886c4</color>
+
+    <color name="inactive_tab">#969eab</color>
+    <color name="icon_green">#5fccc7</color>
+    <color name="date_green">#5FCCC7</color>
+    <color name="sign_out_green">#7ebb5a</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="urgent">#e95344</color>
+    <color name="tag_bg">#f7f7f7</color>
+    <color name="medium">#4399d8</color>
+    <color name="medium_1">#4fbbbd</color>
+    <color name="normal">#7ebb5a</color>
+    <color name="news">#7ebb5a</color>
+    <color name="date_gray">#bdbebe</color>
+    <color name="search_gray">#868894</color>
+    <color name="search_box_bg">#99dcdde5</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+</resources>

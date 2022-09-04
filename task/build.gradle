@@ -1,0 +1,173 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+
+android {
+    compileSdkVersion (Android.compileSdkVersion)
+
+    defaultConfig {
+        minSdkVersion (Android.minSdkVersion)
+        targetSdkVersion (Android.targetSdkVersion)
+        versionCode = Android.versionCode
+        versionName = Android.versionName
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+
+        WetherTST {
+            initWith debug
+        }
+
+        WetherSTG {
+            initWith debug
+        }
+
+        WetherProd {
+            initWith release
+        }
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            initWith debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    api project(":core")
+    api project(":domain")
+
+
+    //kotlin
+    implementation(Kotlin.kotlin_stdlib_jdk)
+    implementation(Kotlin.kotlin_stdlib)
+    implementation(Kotlin.core_ktx)
+    implementation(Kotlin.kotlin_reflect)
+
+    //Androidx
+    implementation(Androidx.appcompat)
+    implementation(Androidx.fragment)
+    implementation(Androidx.cardview)
+    implementation(Androidx.recyclerview)
+    implementation(Androidx.multidex)
+    implementation(Androidx.lifecycle)
+    implementation(Androidx.legacy)
+    kapt(Androidx.appcompat)
+    implementation(Androidx.ifecycle_reactivestreams)
+    implementation(Androidx.lifecycle_common)
+    implementation(Androidx.lifecycle_runtime)
+    implementation(Androidx.lifecycle_livedata)
+    implementation(Androidx.constraintlayout)
+    implementation(Androidx.navigation_fragment)
+    implementation(Androidx.navigation_ui)
+    implementation(Androidx.lifecycle_viewmodel)
+
+    //Material
+    implementation(Material.material)
+
+
+    //Coroutines
+    implementation(Coroutines.core)
+    implementation(Coroutines.android)
+
+    //Groupie
+    implementation(Groupie.groupie)
+    implementation(Groupie.groupie_extension)
+
+    //Hilt
+    implementation(Hilt.hilt_android)
+    implementation(Hilt.viewmodel)
+    kapt(Hilt.kapt_hilt_android)
+    kapt(Hilt.kapt_hilt_compiler)
+
+    //WorkManager
+    implementation(WorkManager.workManager)
+
+
+    //Gson
+    implementation(Gson.gson)
+
+
+    
+    //test
+    testImplementation (TestLib.junit)
+    androidTestImplementation(TestLib.junit)
+    androidTestImplementation(TestLib.androidxTestCore)
+    androidTestImplementation(TestLib.androidxTestCoreKtx)
+    androidTestImplementation(TestLib.core_testing)
+
+    testImplementation(TestLib.junit_jupiter_api)
+    testImplementation(TestLib.junit_jupiter_params)
+    testRuntimeOnly(TestLib.junit_jupiter_engine)
+
+    testImplementation(TestLib.mockito_core)
+
+    androidTestImplementation(TestLib.kotlinTest)
+    androidTestImplementation(TestLib.espresso_core)
+    androidTestImplementation(TestLib.espresso_contrib)
+    androidTestImplementation(TestLib.androidx_espresso_idling_resource)
+    implementation(TestLib.androidx_espresso_idling_resource)
+
+    androidTestImplementation(TestLib.mockk)
+    androidTestImplementation(TestLib.runner)
+    androidTestImplementation(TestLib.testRules)
+    androidTestImplementation(TestLib.testExt)
+
+    debugImplementation(TestLib.fragmentTesting)
+    androidTestImplementation(TestLib.navigationTesting)
+
+    testImplementation (TestLib.coroutinesTest)
+    androidTestImplementation(TestLib.coroutinesTest)
+
+    //design
+    implementation (Design.otpView)
+    implementation (Design.ssp)
+    implementation (Design.sdp)
+
+    //crypto
+    implementation(Security.crypto)
+
+    implementation (Security.okio)
+
+    //glide
+    implementation(Glide.glide)
+    kapt(Glide.glideProcess)
+
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation("com.github.doyaaaaaken:kotlin-csv-jvm:1.6.0") //for JVM platform
+/*
+    implementation("com.github.doyaaaaaken:kotlin-csv-js:1.6.0") //for Kotlin JS platform
+*/
+}

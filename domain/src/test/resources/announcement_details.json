@@ -1,0 +1,48 @@
+{
+  "message": null,
+  "success": true,
+  "errorCode": null,
+  "result": {
+    "data": {
+      "id": "ae9077a7-f9b6-4e4f-8f57-2f848979d3bd",
+      "message": "string123",
+      "createdByImage": "https://ijusoorusermgmtsit.channels.com.sa/api/UserInfo/GetUserImageByUserId?email=xXHDWVOvbpY3NROUlWbDVkMWFXcDFjMjl2Y21SbGJXOWhRR05vWVc1dVpXeHpMbU52YlM1ellRPT1mcTBCMQ==5n2ps",
+      "importance": "h",
+      "importanceLevel": "3",
+      "dateCreated": "2020-11-05T11:11:21.937",
+      "isBookMarked": false,
+      "shareUrl": "http://40.114.214.132:82/api/Announcement/ae9077a7-f9b6-4e4f-8f57-2f848979d3bd",
+      "countOfView": 1,
+      "attachments": [
+        {
+          "attachmentID": "51a32470-3658-4d4d-0bc6-08d881925aa8",
+          "attachmentType": "string123",
+          "attachmentURL": "bd1f6385-c23d-49c0-987d-cc45ca71fd35",
+          "attachmentName": "string123",
+          "attachmentExtension": "string123",
+          "attachmentSize": 0,
+          "attachmentDisplaySize": "0KB"
+        },
+        {
+          "attachmentID": "335ea335-c48e-4702-519d-08d881933c39",
+          "attachmentType": "string123",
+          "attachmentURL": "bd1f6385-c23d-49c0-987d-cc45ca71fd35",
+          "attachmentName": "string123",
+          "attachmentExtension": "string123",
+          "attachmentSize": 0,
+          "attachmentDisplaySize": "0KB"
+        },
+        {
+          "attachmentID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "attachmentType": "string",
+          "attachmentURL": "bd1f6385-c23d-49c0-987d-cc45ca71fd35",
+          "attachmentName": "string",
+          "attachmentExtension": "string",
+          "attachmentSize": 0,
+          "attachmentDisplaySize": "0KB"
+        }
+      ]
+    }
+  },
+  "isActive": true
+}
