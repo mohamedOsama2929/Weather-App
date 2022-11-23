@@ -5,7 +5,6 @@ import android.app.PendingIntent
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import com.ahoy.core.base.activity.BaseActivity
 import com.ahoy.task.R
 import com.ahoy.task.services.AlarmReceiver
@@ -31,11 +30,11 @@ class TaskActivity : BaseActivity() {
     private fun setWeatherAlarm() {
         myIntent = Intent(this, AlarmReceiver::class.java)
         myIntent!!.putExtra("id", id)
-        pendingIntent = PendingIntent.getBroadcast(baseContext, id, myIntent, 0)
+        pendingIntent = PendingIntent.getBroadcast(baseContext, id, myIntent!!, 0)
 
         alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
         val pendingIntent =
-            PendingIntent.getBroadcast(this, 0, myIntent, 0)
+            PendingIntent.getBroadcast(this, 0, myIntent!!, 0)
         myIntent?.data = (Uri.parse("custom://" + System.currentTimeMillis()));
         alarmManager?.cancel(pendingIntent)
         val alarmStartTime = Calendar.getInstance()
@@ -44,7 +43,6 @@ class TaskActivity : BaseActivity() {
         alarmStartTime.set(Calendar.MINUTE, 0)
         alarmStartTime.set(Calendar.SECOND, 0)
         if (now.after(alarmStartTime)) {
-            Log.e("Hey", "Added a day");
             alarmStartTime.add(Calendar.DATE, 1);
         }
         alarmManager?.setRepeating(

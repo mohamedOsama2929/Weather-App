@@ -8,6 +8,7 @@ class LocalDataSource @Inject constructor(
     private val mainDao: FavoriteCitiesDao,
 
     ) : ILocalDataSource {
+
     override suspend fun insertFavoriteCity(favoriteCity: LocalForecast) {
         return mainDao.insertFavoriteCityLocal(favoriteCity)
     }

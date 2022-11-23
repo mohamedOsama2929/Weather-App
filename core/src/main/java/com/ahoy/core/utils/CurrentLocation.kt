@@ -207,17 +207,19 @@ class CurrentLocation private constructor(private val appContext: Activity) : Li
 
     private fun getGeoCoderAddress(context: Context?, location: LatLng?): MutableList<Address>? {
         if (location != null) {
-            val geocoder = Geocoder(context, Locale.forLanguageTag("en"))
+            val geocoder = context?.let { Geocoder(it, Locale.forLanguageTag("en")) }
             try {
                 /*
              * Geocoder.getFromLocation - Returns an array of Addresses
              * that are known to describe the area immediately surrounding the given latitude and longitude.
              */
-                return geocoder.getFromLocation(
-                    location.latitude,
-                    location.longitude,
-                    1
-                )
+                if (geocoder != null) {
+                    return geocoder.getFromLocation(
+                        location.latitude,
+                        location.longitude,
+                        1
+                    )
+                }
             } catch (e: IOException) {
                 //e.printStackTrace();
             }

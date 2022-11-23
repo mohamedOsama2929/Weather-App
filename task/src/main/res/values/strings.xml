@@ -20,4 +20,6 @@
     <string name="data_base_name" translatable="false">WeatherRoomDB.csv</string>
     <string name="file_generated" translatable="false">File Generated</string>
     <string name="file_not_generated" translatable="false">File Not Generated</string>
+    <string name="title_activity_weather_compose">WeatherCompose</string>
+    <string name="title_activity_weather">WeatherActivity</string>
 </resources>

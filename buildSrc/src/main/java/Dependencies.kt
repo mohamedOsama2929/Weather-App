@@ -108,10 +108,10 @@ object Versions {
 
 object Android {
     val applicationId = "com.ahoy.weather"
-    val compileSdkVersion = 29
+    val compileSdkVersion = 33
     val buildToolsVersion = "29.0.2"
     val minSdkVersion = 23
-    val targetSdkVersion = 29
+    val targetSdkVersion = 33
     val versionCode = 369
     val versionName = "1.0"
 
